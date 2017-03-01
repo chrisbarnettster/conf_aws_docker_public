@@ -4,6 +4,7 @@
 sudo yum update -y
 sudo yum install tmux git -y
 sudo yum install docker -y
+sudo usermod -a -G docker ec2-user
 sudo chkconfig docker
 sudo service docker start
 curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s`-`uname -m` >  /tmp/docker-compose
